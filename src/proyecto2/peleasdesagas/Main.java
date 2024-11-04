@@ -8,7 +8,7 @@ package proyecto2.peleasdesagas;
  *
  * @author Camila Garcia
  */
-public class Proyecto2PeleasDeSagas {
+public class Main {
 
     /**
      * @param args the command line arguments
