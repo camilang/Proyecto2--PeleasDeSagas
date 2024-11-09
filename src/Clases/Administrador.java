@@ -120,7 +120,7 @@ public class Administrador extends Thread {
     }
     
     public void exe(){
-        for (int i = 0; i < 20; i++) {
+        for (int i = 0; i <20 ; i++) {
             this.newPersonaje("Star Wars");
             this.newPersonaje("Star Trek");
         }

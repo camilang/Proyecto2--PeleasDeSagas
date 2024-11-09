@@ -96,7 +96,7 @@ public class InteligenciaArtificial extends Thread{
     
     
    
-       @Override
+    @Override
     public void run(){
         try {
             sleep(1000);
@@ -106,50 +106,48 @@ public class InteligenciaArtificial extends Thread{
         while (true){
             try { 
                 this.exclusionMutua.acquire();
-                
-                
                 System.out.println("\n Ronda: " + Integer.toString(this.administrador.rondasN) + "\nInteligencia Artificial -- Selected:   " +pSW.id + " "+ pSW.nombre + "nivel:"+ pSW.nivel+ pSW.cMonto+"  y  " + pST.id+ " "+ pST.nombre+"nivel:"+ pST.nivel + pST.cMonto);
-                
                 int resultado = resultado();
                 String resultadoStr;
                 sleep(Main.duracion);
-               // Main.interfaz.estado(""); 
+                Main.interfaz.state(""); 
                
                 switch (resultado) {
                     case 1:
                         resultadoStr = "Ganador: ";
-                       
+                        Main.interfaz.printResultado(resultadoStr);
                         Personaje ganador = ganador(pSW, pST);
                         if (ganador==pSW){
                             this.ganaSW++;
-                            
+                            Main.interfaz.actualizarVictorias(true, Integer.toString(this.ganaSW));
                         }else{
                             this.ganaST++;
-                            
+                            Main.interfaz.actualizarVictorias(false, Integer.toString(this.ganaST));
                         }
                         System.out.println("\tGanador: " + ganador.id); 
-                        
+                        Main.interfaz.printWinner(ganador);
                         break;
 
                     case 2:
                         resultadoStr = "Empate";
-                       
+                        Main.interfaz.printResultado(resultadoStr);
                         System.out.println("Empate ");
                         pSW.nivel = pST.nivel = 1;
-                        
+                        administrador.colaPersonaje(pSW, administrador.qSW1, administrador.qSW2, administrador.qSW3);
+                        administrador.colaPersonaje(pST, administrador.qST1, administrador.qST2, administrador.qST3);
                         break;
                     
                     case 3: 
                         resultadoStr = "Suspendida";
-                       
+                        Main.interfaz.printResultado(resultadoStr);
                         System.out.println("Refuerzo ");
                         administrador.enviarRefuerzo(pSW, administrador.qSW4);
                         administrador.enviarRefuerzo(pST, administrador.qST4);
                         break;
                 }
-                
+                Main.interfaz.actualizarColas(administrador.qSW1,administrador.qSW2,administrador.qSW3,administrador.qSW4,administrador.qST1,administrador.qST2,administrador.qST3,administrador.qST4);
                 sleep(Main.duracion/2);
-                
+                Main.interfaz.limpiarFields();
                 this.exclusionMutua.release();
                 sleep(1000);
                 

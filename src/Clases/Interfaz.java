@@ -109,11 +109,15 @@ public class Interfaz extends javax.swing.JFrame {
 
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        tituloSW.setBackground(new java.awt.Color(255, 255, 255));
         tituloSW.setFont(new java.awt.Font("DialogInput", 1, 36)); // NOI18N
+        tituloSW.setForeground(new java.awt.Color(255, 255, 255));
         tituloSW.setText("Star Wars");
         jPanel1.add(tituloSW, new org.netbeans.lib.awtextra.AbsoluteConstraints(1040, 0, 240, 60));
 
+        tituloST.setBackground(new java.awt.Color(255, 255, 255));
         tituloST.setFont(new java.awt.Font("DialogInput", 1, 36)); // NOI18N
+        tituloST.setForeground(new java.awt.Color(255, 255, 255));
         tituloST.setText("Star Trek");
         jPanel1.add(tituloST, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 0, 240, 60));
 
@@ -152,10 +156,12 @@ public class Interfaz extends javax.swing.JFrame {
         jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         contadorVictoriasST.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        contadorVictoriasST.setForeground(new java.awt.Color(255, 255, 255));
         contadorVictoriasST.setText("0");
         jPanel4.add(contadorVictoriasST, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 0, 70, 30));
 
         jLabel4.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Victorias:");
         jPanel4.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 70, 30));
 
@@ -176,7 +182,9 @@ public class Interfaz extends javax.swing.JFrame {
         jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 60, 190, 30));
 
         taST3.setBackground(new java.awt.Color(0, 0, 204));
-        taST3.setColumns(20);
+        taST3.setColumns(5);
+        taST3.setForeground(new java.awt.Color(255, 255, 255));
+        taST3.setLineWrap(true);
         taST3.setRows(5);
         taST3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, null, new java.awt.Color(204, 204, 204), null, null));
         jScrollPane1.setViewportView(taST3);
@@ -184,7 +192,9 @@ public class Interfaz extends javax.swing.JFrame {
         jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 280, 190, 90));
 
         taSW4.setBackground(new java.awt.Color(255, 255, 204));
-        taSW4.setColumns(20);
+        taSW4.setColumns(5);
+        taSW4.setForeground(new java.awt.Color(0, 0, 0));
+        taSW4.setLineWrap(true);
         taSW4.setRows(5);
         taSW4.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jScrollPane2.setViewportView(taSW4);
@@ -192,8 +202,9 @@ public class Interfaz extends javax.swing.JFrame {
         jPanel1.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1050, 370, 190, 90));
 
         taSW2.setBackground(new java.awt.Color(255, 204, 102));
-        taSW2.setColumns(20);
+        taSW2.setColumns(5);
         taSW2.setForeground(new java.awt.Color(0, 0, 0));
+        taSW2.setLineWrap(true);
         taSW2.setRows(5);
         taSW2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jScrollPane3.setViewportView(taSW2);
@@ -201,7 +212,9 @@ public class Interfaz extends javax.swing.JFrame {
         jPanel1.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(1050, 190, 190, 90));
 
         taST1.setBackground(new java.awt.Color(0, 0, 102));
-        taST1.setColumns(20);
+        taST1.setColumns(5);
+        taST1.setForeground(new java.awt.Color(255, 255, 255));
+        taST1.setLineWrap(true);
         taST1.setRows(5);
         taST1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, null, new java.awt.Color(204, 204, 204), null, null));
         jScrollPane4.setViewportView(taST1);
@@ -209,7 +222,9 @@ public class Interfaz extends javax.swing.JFrame {
         jPanel1.add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 100, 190, 90));
 
         taST2.setBackground(new java.awt.Color(0, 0, 153));
-        taST2.setColumns(20);
+        taST2.setColumns(5);
+        taST2.setForeground(new java.awt.Color(255, 255, 255));
+        taST2.setLineWrap(true);
         taST2.setRows(5);
         taST2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, null, new java.awt.Color(204, 204, 204), null, null));
         jScrollPane5.setViewportView(taST2);
@@ -217,8 +232,9 @@ public class Interfaz extends javax.swing.JFrame {
         jPanel1.add(jScrollPane5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 190, 190, 90));
 
         taSW3.setBackground(new java.awt.Color(255, 255, 153));
-        taSW3.setColumns(20);
-        taSW3.setForeground(new java.awt.Color(255, 204, 153));
+        taSW3.setColumns(5);
+        taSW3.setForeground(new java.awt.Color(0, 0, 0));
+        taSW3.setLineWrap(true);
         taSW3.setRows(5);
         taSW3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jScrollPane6.setViewportView(taSW3);
@@ -226,8 +242,9 @@ public class Interfaz extends javax.swing.JFrame {
         jPanel1.add(jScrollPane6, new org.netbeans.lib.awtextra.AbsoluteConstraints(1050, 280, 190, 90));
 
         taSW1.setBackground(new java.awt.Color(255, 204, 51));
-        taSW1.setColumns(20);
+        taSW1.setColumns(5);
         taSW1.setForeground(new java.awt.Color(0, 0, 0));
+        taSW1.setLineWrap(true);
         taSW1.setRows(5);
         taSW1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jScrollPane7.setViewportView(taSW1);
@@ -235,7 +252,9 @@ public class Interfaz extends javax.swing.JFrame {
         jPanel1.add(jScrollPane7, new org.netbeans.lib.awtextra.AbsoluteConstraints(1050, 100, 190, 90));
 
         taST4.setBackground(new java.awt.Color(51, 51, 255));
-        taST4.setColumns(20);
+        taST4.setColumns(5);
+        taST4.setForeground(new java.awt.Color(255, 255, 255));
+        taST4.setLineWrap(true);
         taST4.setRows(5);
         taST4.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, null, new java.awt.Color(204, 204, 204), null, null));
         jScrollPane8.setViewportView(taST4);
@@ -311,9 +330,9 @@ public class Interfaz extends javax.swing.JFrame {
         jPanel6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         estadoLabel.setBackground(new java.awt.Color(255, 255, 255));
-        estadoLabel.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        estadoLabel.setFont(new java.awt.Font("DialogInput", 1, 14)); // NOI18N
         estadoLabel.setForeground(new java.awt.Color(0, 0, 0));
-        jPanel6.add(estadoLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 220, 40));
+        jPanel6.add(estadoLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 220, 40));
 
         jPanel1.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 440, 230, 40));
 
@@ -321,9 +340,9 @@ public class Interfaz extends javax.swing.JFrame {
         jPanel7.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jPanel7.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        resultadoLabel.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        resultadoLabel.setFont(new java.awt.Font("DialogInput", 1, 14)); // NOI18N
         resultadoLabel.setForeground(new java.awt.Color(0, 0, 0));
-        jPanel7.add(resultadoLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 220, 40));
+        jPanel7.add(resultadoLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 210, 40));
 
         jPanel1.add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 480, 230, 40));
 
@@ -334,7 +353,7 @@ public class Interfaz extends javax.swing.JFrame {
         ganadorLabel.setBackground(new java.awt.Color(0, 0, 0));
         ganadorLabel.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
         ganadorLabel.setForeground(new java.awt.Color(0, 0, 0));
-        jPanel8.add(ganadorLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 210, 40));
+        jPanel8.add(ganadorLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 210, 40));
 
         jPanel1.add(jPanel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 520, 230, 40));
 
@@ -347,7 +366,7 @@ public class Interfaz extends javax.swing.JFrame {
 
         personajeSWlabel.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
         personajeSWlabel.setForeground(new java.awt.Color(0, 0, 0));
-        jPanel9.add(personajeSWlabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 260, 40));
+        jPanel9.add(personajeSWlabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 260, 40));
 
         jPanel11.setBackground(new java.awt.Color(255, 204, 0));
         jPanel11.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -372,7 +391,8 @@ public class Interfaz extends javax.swing.JFrame {
         jPanel10.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 490, 50, 50));
 
         personajeSTlabel.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
-        jPanel10.add(personajeSTlabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 280, 40));
+        personajeSTlabel.setForeground(new java.awt.Color(255, 255, 255));
+        jPanel10.add(personajeSTlabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 280, 40));
 
         jPanel1.add(jPanel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 490, 310, 40));
 
@@ -504,6 +524,7 @@ public class Interfaz extends javax.swing.JFrame {
         valorHabilidadesST.setText("0");
         jPanel1.add(valorHabilidadesST, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 600, 80, -1));
 
+        valorFuerzaSW.setBackground(new java.awt.Color(255, 255, 255));
         valorFuerzaSW.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         valorFuerzaSW.setForeground(new java.awt.Color(255, 255, 255));
         valorFuerzaSW.setText("0");
@@ -575,17 +596,17 @@ public class Interfaz extends javax.swing.JFrame {
    
     public void updateSelected(Personaje pSW, Personaje pST){
         this.selecionadoSTlabel.setText(pST.id);
-        this.personajeSTlabel.setText(pST.nombrePersonaje);
+        this.personajeSTlabel.setText(pST.nombre);
         this.valorAgilidadST.setText(String.valueOf(pST.valorAgilidad)+"✌️");
         this.valorHabilidadesST.setText(String.valueOf(pST.valorHabilidades)+"✋");
         this.valorPuntosdeVidaST.setText(String.valueOf(pST.valorPuntosVida)+"👌");
         this.valorFuerzaST.setText(String.valueOf(pST.valorFuerza)+"💪");
         this.seleccionadoSWlabel.setText(pSW.id);
-        this.personajeSWlabel.setText(pSW.nombrePersonaje);
+        this.personajeSWlabel.setText(pSW.nombre);
         this.valorAgilidadSW.setText(String.valueOf(pSW.valorAgilidad)+"✌");
         this.valorHabilidadesSW.setText(String.valueOf(pSW.valorHabilidades)+"✋");
         this.valorPuntosdeVidaSW.setText(String.valueOf(pSW.valorPuntosVida)+"👌");
-        this.valorPuntosdeVidaSW.setText(String.valueOf(pSW.valorFuerza)+"💪");
+        this.valorFuerzaSW.setText(String.valueOf(pSW.valorFuerza)+"💪");
         
         
     }
@@ -617,7 +638,8 @@ public class Interfaz extends javax.swing.JFrame {
     
     public void printWinner(Personaje winner){
         this.ganadorLabel.setVisible(true);
-        this.ganadorLabel.setText(winner.id);
+        this.ganadorLabel.setText(winner.nombre);
+       
     }
     
             
