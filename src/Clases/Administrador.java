@@ -89,7 +89,7 @@ public class Administrador extends Thread {
             printPersonaje(newPersonaje);
             
         }
-        // ACTUALIZAR LA INTERFACE
+
     }
     
     public void colaPersonaje(Personaje p, Cola q1, Cola q2, Cola q3){
