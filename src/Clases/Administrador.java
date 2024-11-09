@@ -89,6 +89,8 @@ public class Administrador extends Thread {
             printPersonaje(newPersonaje);
             
         }
+        Main.interfaz.actualizarColas(this.qSW1,this.qSW2,this.qSW3,this.qSW4, this.qST1, this.qST2, this.qST3, this.qST4);   
+
 
     }
     
@@ -188,7 +190,8 @@ public class Administrador extends Thread {
             refuerzo.desencolar();
             p.setNext(null);
             q1.encolar(p);
-            //actualizar interfaz
+        Main.interfaz.actualizarColas(this.qSW1,this.qSW2,this.qSW3,this.qSW4, this.qST1, this.qST2, this.qST3, this.qST4);   
+
             
         }
      
@@ -207,7 +210,7 @@ public class Administrador extends Thread {
                 this.probsSacarRefuerzo(qST4, qST1);
                 this.probsSacarRefuerzo(qSW4, qSW1);
                 
-                //interffazx
+                Main.interfaz.state("seleccionando personaje");
                 
                 sleep(2000);
                 if (this.rondasN != 0 &&  rondasN%2 == 0){
@@ -222,7 +225,13 @@ public class Administrador extends Thread {
                 pST.setNext(null);
                 ia.pSW = pSW;
                 ia.pST = pST;
-                // ACTUALIZAR INTERFAZ
+                Main.interfaz.updateSelected(pSW, pST); 
+                
+                Main.interfaz.state("simulando combate");
+                
+                Main.interfaz.actualizarColas(this.qSW1,this.qSW2,this.qSW3,this.qSW4, this.qST1, this.qST2, this.qST3, this.qST4);   
+                
+                
             
                 this.exclusionMutua.release();
                 sleep(1000);
@@ -241,7 +250,8 @@ public class Administrador extends Thread {
                 
                 this.rondasN++;
                 
-                // MODIFICAR INTERFAZ
+                Main.interfaz.actualizarColas(this.qSW1,this.qSW2,this.qSW3,this.qSW4, this.qST1, this.qST2, this.qST3, this.qST4);   
+
                 
             } catch (InterruptedException ex) {
             Logger.getLogger(Administrador.class.getName()).log(Level.SEVERE, null, ex);
