@@ -44,21 +44,21 @@ public class Interfaz extends javax.swing.JFrame {
         contadorVictoriasST3 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
+        taST3 = new javax.swing.JTextArea();
         jScrollPane2 = new javax.swing.JScrollPane();
-        jTextArea2 = new javax.swing.JTextArea();
+        taSW4 = new javax.swing.JTextArea();
         jScrollPane3 = new javax.swing.JScrollPane();
-        jTextArea3 = new javax.swing.JTextArea();
+        taSW2 = new javax.swing.JTextArea();
         jScrollPane4 = new javax.swing.JScrollPane();
-        jTextArea4 = new javax.swing.JTextArea();
+        taST1 = new javax.swing.JTextArea();
         jScrollPane5 = new javax.swing.JScrollPane();
-        jTextArea5 = new javax.swing.JTextArea();
+        taST2 = new javax.swing.JTextArea();
         jScrollPane6 = new javax.swing.JScrollPane();
-        jTextArea6 = new javax.swing.JTextArea();
+        taSW3 = new javax.swing.JTextArea();
         jScrollPane7 = new javax.swing.JScrollPane();
-        jTextArea7 = new javax.swing.JTextArea();
+        taSW1 = new javax.swing.JTextArea();
         jScrollPane8 = new javax.swing.JScrollPane();
-        jTextArea8 = new javax.swing.JTextArea();
+        taST4 = new javax.swing.JTextArea();
         lblColaUS6 = new javax.swing.JLabel();
         lblColaUS7 = new javax.swing.JLabel();
         lblColaUS8 = new javax.swing.JLabel();
@@ -98,7 +98,7 @@ public class Interfaz extends javax.swing.JFrame {
         valorAgilidadST = new javax.swing.JLabel();
         valorFuerzaST = new javax.swing.JLabel();
         valorHabilidadesST = new javax.swing.JLabel();
-        valorsFuerzaSW = new javax.swing.JLabel();
+        valorFuerzaSW = new javax.swing.JLabel();
         valorHabilidadesSW = new javax.swing.JLabel();
         valorPuntosdeVidaSW = new javax.swing.JLabel();
         valorAgilidadSW = new javax.swing.JLabel();
@@ -175,70 +175,70 @@ public class Interfaz extends javax.swing.JFrame {
 
         jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 60, 190, 30));
 
-        jTextArea1.setBackground(new java.awt.Color(0, 0, 204));
-        jTextArea1.setColumns(20);
-        jTextArea1.setRows(5);
-        jTextArea1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, null, new java.awt.Color(204, 204, 204), null, null));
-        jScrollPane1.setViewportView(jTextArea1);
+        taST3.setBackground(new java.awt.Color(0, 0, 204));
+        taST3.setColumns(20);
+        taST3.setRows(5);
+        taST3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, null, new java.awt.Color(204, 204, 204), null, null));
+        jScrollPane1.setViewportView(taST3);
 
         jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 280, 190, 90));
 
-        jTextArea2.setBackground(new java.awt.Color(255, 255, 204));
-        jTextArea2.setColumns(20);
-        jTextArea2.setRows(5);
-        jTextArea2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jScrollPane2.setViewportView(jTextArea2);
+        taSW4.setBackground(new java.awt.Color(255, 255, 204));
+        taSW4.setColumns(20);
+        taSW4.setRows(5);
+        taSW4.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jScrollPane2.setViewportView(taSW4);
 
         jPanel1.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1050, 370, 190, 90));
 
-        jTextArea3.setBackground(new java.awt.Color(255, 204, 102));
-        jTextArea3.setColumns(20);
-        jTextArea3.setForeground(new java.awt.Color(0, 0, 0));
-        jTextArea3.setRows(5);
-        jTextArea3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jScrollPane3.setViewportView(jTextArea3);
+        taSW2.setBackground(new java.awt.Color(255, 204, 102));
+        taSW2.setColumns(20);
+        taSW2.setForeground(new java.awt.Color(0, 0, 0));
+        taSW2.setRows(5);
+        taSW2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jScrollPane3.setViewportView(taSW2);
 
         jPanel1.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(1050, 190, 190, 90));
 
-        jTextArea4.setBackground(new java.awt.Color(0, 0, 102));
-        jTextArea4.setColumns(20);
-        jTextArea4.setRows(5);
-        jTextArea4.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, null, new java.awt.Color(204, 204, 204), null, null));
-        jScrollPane4.setViewportView(jTextArea4);
+        taST1.setBackground(new java.awt.Color(0, 0, 102));
+        taST1.setColumns(20);
+        taST1.setRows(5);
+        taST1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, null, new java.awt.Color(204, 204, 204), null, null));
+        jScrollPane4.setViewportView(taST1);
 
         jPanel1.add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 100, 190, 90));
 
-        jTextArea5.setBackground(new java.awt.Color(0, 0, 153));
-        jTextArea5.setColumns(20);
-        jTextArea5.setRows(5);
-        jTextArea5.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, null, new java.awt.Color(204, 204, 204), null, null));
-        jScrollPane5.setViewportView(jTextArea5);
+        taST2.setBackground(new java.awt.Color(0, 0, 153));
+        taST2.setColumns(20);
+        taST2.setRows(5);
+        taST2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, null, new java.awt.Color(204, 204, 204), null, null));
+        jScrollPane5.setViewportView(taST2);
 
         jPanel1.add(jScrollPane5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 190, 190, 90));
 
-        jTextArea6.setBackground(new java.awt.Color(255, 255, 153));
-        jTextArea6.setColumns(20);
-        jTextArea6.setForeground(new java.awt.Color(255, 204, 153));
-        jTextArea6.setRows(5);
-        jTextArea6.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jScrollPane6.setViewportView(jTextArea6);
+        taSW3.setBackground(new java.awt.Color(255, 255, 153));
+        taSW3.setColumns(20);
+        taSW3.setForeground(new java.awt.Color(255, 204, 153));
+        taSW3.setRows(5);
+        taSW3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jScrollPane6.setViewportView(taSW3);
 
         jPanel1.add(jScrollPane6, new org.netbeans.lib.awtextra.AbsoluteConstraints(1050, 280, 190, 90));
 
-        jTextArea7.setBackground(new java.awt.Color(255, 204, 51));
-        jTextArea7.setColumns(20);
-        jTextArea7.setForeground(new java.awt.Color(0, 0, 0));
-        jTextArea7.setRows(5);
-        jTextArea7.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jScrollPane7.setViewportView(jTextArea7);
+        taSW1.setBackground(new java.awt.Color(255, 204, 51));
+        taSW1.setColumns(20);
+        taSW1.setForeground(new java.awt.Color(0, 0, 0));
+        taSW1.setRows(5);
+        taSW1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jScrollPane7.setViewportView(taSW1);
 
         jPanel1.add(jScrollPane7, new org.netbeans.lib.awtextra.AbsoluteConstraints(1050, 100, 190, 90));
 
-        jTextArea8.setBackground(new java.awt.Color(51, 51, 255));
-        jTextArea8.setColumns(20);
-        jTextArea8.setRows(5);
-        jTextArea8.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, null, new java.awt.Color(204, 204, 204), null, null));
-        jScrollPane8.setViewportView(jTextArea8);
+        taST4.setBackground(new java.awt.Color(51, 51, 255));
+        taST4.setColumns(20);
+        taST4.setRows(5);
+        taST4.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, null, new java.awt.Color(204, 204, 204), null, null));
+        jScrollPane8.setViewportView(taST4);
 
         jPanel1.add(jScrollPane8, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 370, 190, 90));
 
@@ -504,10 +504,10 @@ public class Interfaz extends javax.swing.JFrame {
         valorHabilidadesST.setText("0");
         jPanel1.add(valorHabilidadesST, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 600, 80, -1));
 
-        valorsFuerzaSW.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
-        valorsFuerzaSW.setForeground(new java.awt.Color(255, 255, 255));
-        valorsFuerzaSW.setText("0");
-        jPanel1.add(valorsFuerzaSW, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 660, 50, -1));
+        valorFuerzaSW.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        valorFuerzaSW.setForeground(new java.awt.Color(255, 255, 255));
+        valorFuerzaSW.setText("0");
+        jPanel1.add(valorFuerzaSW, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 660, 50, -1));
 
         valorHabilidadesSW.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         valorHabilidadesSW.setForeground(new java.awt.Color(255, 255, 255));
@@ -541,7 +541,84 @@ public class Interfaz extends javax.swing.JFrame {
         return valorSlider.getText();
     }
     
+    public void actualizarVictorias(boolean PersonajeGanador, String n){
+        if (PersonajeGanador){
+            this.contadorVictoriasSW.setText(n);
+        }else{
+            this.contadorVictoriasST.setText(n);
+        }
+    }
+    private void actualizarCola(javax.swing.JTextArea ta, Cola q){
+        ta.setText("");
+        if (q.esVacio()){return;}
+        Personaje cabeza = q.getCabeza();
+        ta.append(cabeza.id);
+        cabeza = cabeza.getNext();
+        while (cabeza!=null){
+            ta.append("  -  " + cabeza.id);
+            cabeza = cabeza.getNext();
+        }
+    }
+    
+    public void actualizarColas(Cola SW1, Cola SW2, Cola SW3, Cola SW4, Cola ST1, Cola ST2, Cola ST3, Cola ST4){
+        this.actualizarCola(taSW1, SW1);
+        this.actualizarCola(taSW2, SW2);
+        this.actualizarCola(taSW3, SW3);
+        this.actualizarCola(taSW4, SW4);
+        
+        this.actualizarCola(taST1, ST1);
+        this.actualizarCola(taST2, ST2);
+        this.actualizarCola(taST3, ST3);
+        this.actualizarCola(taST4, ST4);
+
+    }
    
+    public void updateSelected(Personaje pSW, Personaje pST){
+        this.selecionadoSTlabel.setText(pST.id);
+        this.personajeSTlabel.setText(pST.nombrePersonaje);
+        this.valorAgilidadST.setText(String.valueOf(pST.valorAgilidad)+"✌️");
+        this.valorHabilidadesST.setText(String.valueOf(pST.valorHabilidades)+"✋");
+        this.valorPuntosdeVidaST.setText(String.valueOf(pST.valorPuntosVida)+"👌");
+        this.valorFuerzaST.setText(String.valueOf(pST.valorFuerza)+"💪");
+        this.seleccionadoSWlabel.setText(pSW.id);
+        this.personajeSWlabel.setText(pSW.nombrePersonaje);
+        this.valorAgilidadSW.setText(String.valueOf(pSW.valorAgilidad)+"✌");
+        this.valorHabilidadesSW.setText(String.valueOf(pSW.valorHabilidades)+"✋");
+        this.valorPuntosdeVidaSW.setText(String.valueOf(pSW.valorPuntosVida)+"👌");
+        this.valorPuntosdeVidaSW.setText(String.valueOf(pSW.valorFuerza)+"💪");
+        
+        
+    }
+    
+     public void printResultado(String s){
+        this.resultadoLabel.setText(s);
+    }
+    
+    public void state(String estado){
+        this.estadoLabel.setText(estado);
+    }
+    
+    public void limpiarFields(){
+        this.resultadoLabel.setText("");
+        this.selecionadoSTlabel.setText("");
+        this.personajeSTlabel.setText("");
+        this.personajeSWlabel.setText("");
+        this.valorAgilidadST.setText("✌️");
+        this.valorHabilidadesST.setText("✋");
+        this.valorPuntosdeVidaST.setText("👌");
+        this.valorFuerzaST.setText("💪");
+        this.seleccionadoSWlabel.setText("");
+        this.valorAgilidadSW.setText("✌️");
+        this.valorHabilidadesSW.setText("✋");
+        this.valorPuntosdeVidaSW.setText("👌");
+        this.valorFuerzaSW.setText("💪");
+        this.ganadorLabel.setVisible(false);
+    }
+    
+    public void printWinner(Personaje winner){
+        this.ganadorLabel.setVisible(true);
+        this.ganadorLabel.setText(winner.id);
+    }
     
             
     
@@ -618,14 +695,6 @@ public class Interfaz extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane6;
     private javax.swing.JScrollPane jScrollPane7;
     private javax.swing.JScrollPane jScrollPane8;
-    private javax.swing.JTextArea jTextArea1;
-    private javax.swing.JTextArea jTextArea2;
-    private javax.swing.JTextArea jTextArea3;
-    private javax.swing.JTextArea jTextArea4;
-    private javax.swing.JTextArea jTextArea5;
-    private javax.swing.JTextArea jTextArea6;
-    private javax.swing.JTextArea jTextArea7;
-    private javax.swing.JTextArea jTextArea8;
     private javax.swing.JLabel lblColaUS10;
     private javax.swing.JLabel lblColaUS11;
     private javax.swing.JLabel lblColaUS12;
@@ -641,6 +710,14 @@ public class Interfaz extends javax.swing.JFrame {
     private javax.swing.JLabel seleccionadoSWlabel;
     private javax.swing.JLabel selecionadoSTlabel;
     private javax.swing.JSlider slider;
+    private javax.swing.JTextArea taST1;
+    private javax.swing.JTextArea taST2;
+    private javax.swing.JTextArea taST3;
+    private javax.swing.JTextArea taST4;
+    private javax.swing.JTextArea taSW1;
+    private javax.swing.JTextArea taSW2;
+    private javax.swing.JTextArea taSW3;
+    private javax.swing.JTextArea taSW4;
     private javax.swing.JLabel titleAV;
     private javax.swing.JLabel titleAV1;
     private javax.swing.JLabel titleAV3;
@@ -654,11 +731,11 @@ public class Interfaz extends javax.swing.JFrame {
     private javax.swing.JLabel valorAgilidadST;
     private javax.swing.JLabel valorAgilidadSW;
     private javax.swing.JLabel valorFuerzaST;
+    private javax.swing.JLabel valorFuerzaSW;
     private javax.swing.JLabel valorHabilidadesST;
     private javax.swing.JLabel valorHabilidadesSW;
     private javax.swing.JLabel valorPuntosdeVidaST;
     private javax.swing.JLabel valorPuntosdeVidaSW;
     private javax.swing.JLabel valorSlider;
-    private javax.swing.JLabel valorsFuerzaSW;
     // End of variables declaration//GEN-END:variables
 }
