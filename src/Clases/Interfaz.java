@@ -312,7 +312,7 @@ public class Interfaz extends javax.swing.JFrame {
         estadoLabel.setBackground(new java.awt.Color(255, 255, 255));
         estadoLabel.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
         estadoLabel.setForeground(new java.awt.Color(0, 0, 0));
-        jPanel6.add(estadoLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 240, 40));
+        jPanel6.add(estadoLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 220, 40));
 
         jPanel1.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 440, 230, 40));
 
@@ -532,8 +532,8 @@ public class Interfaz extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void sliderStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_sliderStateChanged
-    valorSlider.setText(Integer.toString(slider.getValue()));
-    Main.duracion= Integer.parseInt(this.getDuracion())*1000;
+        valorSlider.setText(Integer.toString(slider.getValue()));
+        Main.duracion= Integer.parseInt(this.getDuracion())*1000;
     }//GEN-LAST:event_sliderStateChanged
 
     public String getDuracion(){
@@ -570,6 +570,9 @@ public class Interfaz extends javax.swing.JFrame {
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(Interfaz.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
