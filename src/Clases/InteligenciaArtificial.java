@@ -22,7 +22,8 @@ public class InteligenciaArtificial extends Thread{
     public int ganaST;
     
     public InteligenciaArtificial() {
-       
+        this.exclusionMutua = Main.exclusionMutua;
+        this.administrador = Main.administrador;
         this.ganaSW = 0;
         this.ganaST = 0;
         
@@ -111,22 +112,25 @@ public class InteligenciaArtificial extends Thread{
                 
                 int resultado = resultado();
                 String resultadoStr;
-              
+                sleep(Main.duracion);
+               // Main.interfaz.estado(""); 
+               
                 switch (resultado) {
                     case 1:
                         resultadoStr = "Ganador: ";
                        
-                        Personaje winner = ganador(pSW, pST);
-                        if (winner==pSW){
+                        Personaje ganador = ganador(pSW, pST);
+                        if (ganador==pSW){
                             this.ganaSW++;
                             
                         }else{
                             this.ganaST++;
                             
                         }
-                        System.out.println("\tGanador: " + winner.id); 
+                        System.out.println("\tGanador: " + ganador.id); 
                         
                         break;
+
                     case 2:
                         resultadoStr = "Empate";
                        
@@ -139,10 +143,13 @@ public class InteligenciaArtificial extends Thread{
                         resultadoStr = "Suspendida";
                        
                         System.out.println("Refuerzo ");
-                        
+                        administrador.enviarRefuerzo(pSW, administrador.qSW4);
+                        administrador.enviarRefuerzo(pST, administrador.qST4);
                         break;
                 }
-               
+                
+                sleep(Main.duracion/2);
+                
                 this.exclusionMutua.release();
                 sleep(1000);
                 
