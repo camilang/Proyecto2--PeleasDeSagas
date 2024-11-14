@@ -24,8 +24,8 @@ public class Personaje {
     public String nombrePersonaje;
 
 
-    public String[] personajesSW = {"Ackbar","Grogu","Lando Calrissian","Cassian Andor","Mando","Yoda", "Luke Skywalker","Darth Vader","Han Solo", "Obi-Wan Kenobi", "Boba Fett", "Chewbacca"};
-    public String[] personajesST = {"Jean Luc Picard","Spock","Worf","Phlox","Data","Nog", "Odo","Tuvok","Elim Garak", "Harry Kim", "Tom Paris", "Kira Nerys", "Teniente Saavik" };
+    public String[] personajesSW = {"Ackbar","Grogu","Lando Calrissian","Cassian Andor","Mando","Yoda", "Luke Skywalker","Darth Vader","Han Solo", "Obi-Wan Kenobi", "Boba Fett", "Chewbacca","Cody","Kylo Ren","IG-88","Rey","Clon 99","Rex","San Hill","Dogma","Finn","Flix","Dooku","Garven Dreis","Greedo","Snoke"};
+    public String[] personajesST = {"Jean Luc Picard","Spock","Worf","Phlox","Data","Nog", "Odo","Tuvok","Elim Garak", "Harry Kim", "Tom Paris", "Kira Nerys", "Teniente Saavik","Sarek","Pavel Chekov","Tasha Yar","Nyota Uhura","Guinan","Janice Rand","William Riker","Lore","Ro Laren","Chakotay","Quark","Rom","Seven of Nine"};
 
     
     private Personaje proximo; 
@@ -43,7 +43,7 @@ public class Personaje {
         this.contador = contador;
         this.nombre = "";
         
-        this.id = definicioId(saga, contador);
+        this.id = definicionId(saga, contador);
         
         this.nivel = definicionNivel(habilidades, puntosVida, fuerza, agilidad);
         
@@ -67,21 +67,25 @@ public class Personaje {
         if (agilidad){cMonto+=3;}
         if(agilidad) {valorAgilidad += 3;}
         
-        if (cMonto >= 11){return 1;}
-        if (cMonto >=5  && cMonto < 10){return 2;}
+        if (cMonto >= 11){
+            return 1;
+        }
+        if (cMonto >=5  && cMonto < 10){
+            return 2;
+        }
         return 3;
     }
     
-    public String definicioId(String saga, int contador){
+    public String definicionId(String saga, int contador){
         String id;
         String[] listToRun;
         String nombre = null;
-        if(saga.equals("Nick")){
-            id = "AV";
+        if(saga.equals("Star Wars")){
+            id = "SW";
             listToRun = this.personajesSW;
             this.nombre = listToRun[contador-1];
         }else{
-            id = "US";
+            id ="ST";
             listToRun = this.personajesST;
             this.nombre = listToRun[contador-1];
         }
